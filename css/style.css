@@ -1,1 +1,99 @@
-/* Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+/***** Base Styles *****/
+
+:root {
+  --primary-color: #047aed;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/***** Navbar *****/
+
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 80px;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  border: 2px #fff solid;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* Showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+}
+
+/* Utilities for whole website */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto; /* removes white space above navbar*/
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
